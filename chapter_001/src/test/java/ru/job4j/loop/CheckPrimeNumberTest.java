@@ -17,4 +17,10 @@ public class CheckPrimeNumberTest {
         boolean rsl = CheckPrimeNumber.check(4);
         assertThat(rsl, is(false));
     }
+
+    @Test
+    public void when7() {
+        boolean rsl = CheckPrimeNumber.check(7);
+        assertThat(rsl, is(true));
+    }
 }
