@@ -13,11 +13,6 @@ public class TurnTest {
         int[] expect = new int[] {2, 6, 1, 4};
         assertThat(result, is(expect));
     }
-
-    @Test
-    public void whenTurnArrayWithOddAmountOfElementsThenTurnedArray() {
-        //напишите здесь тест, проверяющий переворот массива с нечётным числом элементов, например {1, 2, 3, 4, 5}.
-    }
     @Test
     public void whenTurnArrayWithEvenAmountOfElementsThenTurnedArrays() {
         Turn turner = new Turn();
