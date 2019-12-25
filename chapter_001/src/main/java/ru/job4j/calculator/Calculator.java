@@ -31,9 +31,9 @@ public class Calculator {
      * @author Andrey Gorbunov (gorbunovv.andrey@gmail.com)
      */
     public static void main(String[] args) {
-        add(1,1);
-        div(4,2);
-        multiply(2,1);
-        subtract(10,5);
+        add(1, 1);
+        div(4, 2);
+        multiply(2, 1);
+        subtract(10, 5);
     }
 }

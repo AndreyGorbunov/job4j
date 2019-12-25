@@ -7,10 +7,11 @@ public class MultiMax {
         boolean condition2 = first > second;
         int result2 = condition2 ? result1 : third;
         int result;
-        if (result1 > result2)
+        if (result1 > result2) {
             result = result1;
-        else
+        } else {
             result = result2;
+        }
         return result;
     }
 }
