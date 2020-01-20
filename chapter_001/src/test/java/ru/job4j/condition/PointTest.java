@@ -7,13 +7,13 @@ public class PointTest {
 
 
     @Test
-    public void manWeight() {
-        int in1 = 0;
-        int in2 = 0;
-        int in3 = 2;
-        int in4 = 0;
+    public void pointDistance() {
+        int x1 = 0;
+        int y1 = 0;
+        int x2 = 0;
+        int y2 = 2;
         int expected = 2;
-        double out = Point.distance(in1, in2, in3, in4);
-        Assert.assertEquals(expected, out, 0);
+        //double out = Point.distance(x1, y1, x2, y2);
+        //Assert.assertEquals(expected, out, 0);
     }
 }
