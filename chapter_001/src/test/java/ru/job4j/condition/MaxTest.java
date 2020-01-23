@@ -11,18 +11,13 @@ public class MaxTest {
         assertThat(result, is(2));
     }
     @Test
-    public void whenMax1() {
-        int result = Max.max(2, 1);
-        assertThat(result, is(2));
+    public void whenMax123() {
+        int result = Max.max(1, 2, 3);
+        assertThat(result, is(3));
     }
     @Test
-    public void whenMax2() {
-        int result = Max.max(1, 2);
-        assertThat(result, is(2));
-    }
-    @Test
-    public void when1Equals2() {
-        int result = Max.max(2, 2);
-        assertThat(result, is(2));
+    public void whenMax1234() {
+        int result = Max.max(1, 2, 3, 4);
+        assertThat(result, is(4));
     }
 }
