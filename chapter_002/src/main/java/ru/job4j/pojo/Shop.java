@@ -31,11 +31,19 @@ public class Shop {
                 System.out.println("null");
             }
         }
-
-        //public Product delete(Product products, int index) {
-            //for(index = 0; index < products.length; index++) {
-
-            //}
-        //}
+    }
+    public static int indexOfNull(Product[] products) {
+        int rsl = -1;
+        for (int i = 0; i < products.length; i++) {
+            Product product = products[i];
+            if (product == null) {
+                rsl = i;
+                break;
+            }
+            else {
+                rsl = -1;
+            }
+        }
+        return rsl;
     }
 }
