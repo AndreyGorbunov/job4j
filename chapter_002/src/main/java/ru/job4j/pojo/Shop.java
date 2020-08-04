@@ -40,9 +40,6 @@ public class Shop {
                 rsl = i;
                 break;
             }
-            else {
-                rsl = -1;
-            }
         }
         return rsl;
     }
