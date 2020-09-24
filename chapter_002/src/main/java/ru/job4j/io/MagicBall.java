@@ -16,8 +16,5 @@ public class MagicBall {
         } else {
             System.out.print("Может быть.");
         }
-
     }
-
-    int answer = new Random().nextInt(3);
 }
