@@ -14,6 +14,10 @@ public class Matches {
                 System.out.println("Ход второго игрока.");
             }
             int select = Integer.valueOf(input.nextLine());
+            if (select < 1 || select > 3) {
+                System.out.println("Введенное число не соответствует диапазону от 1 до 3\n");
+                continue;
+            }
             matches = matches - select;
             if (matches <= 0){
                 if (counter % 2 != 0) {
