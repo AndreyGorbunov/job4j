@@ -26,17 +26,13 @@ public class StartUI {
             } else if (select == 2) {
                 System.out.print("Enter id: ");
                 int id = Integer.valueOf(scanner.nextLine());
-                if (tracker.findById(id) != null) {
-                    System.out.print("Enter name: ");
-                    String name = scanner.nextLine();
-                    Item item = new Item(name);
-                    if (tracker.replace(id, item)) {
-                        System.out.println("Success.");
-                    } else {
-                        System.out.println("Failed.");
-                    }
+                System.out.print("Enter name: ");
+                String name = scanner.nextLine();
+                Item item = new Item(name);
+                if (tracker.replace(id, item)) {
+                    System.out.println("Success.");
                 } else {
-                    System.out.println("Enter the correct id.");
+                    System.out.println("Failed.");
                 }
 
             } else if (select == 3) {
