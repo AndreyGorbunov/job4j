@@ -31,21 +31,21 @@ public class StartUI {
                     String name = scanner.nextLine();
                     Item item = new Item(name);
                     if (tracker.replace(id, item)) {
-                        System.out.println("Получилось");
+                        System.out.println("Success.");
                     } else {
-                        System.out.println("Не получилось");
+                        System.out.println("Failed.");
                     }
                 } else {
-                    System.out.println("Введите корректный id");
+                    System.out.println("Enter the correct id.");
                 }
 
             } else if (select == 3) {
                 System.out.print("Enter id: ");
                 int id = Integer.valueOf(scanner.nextLine());
                 if (tracker.delete(id)) {
-                    System.out.println("Элемент успешно удален");
+                    System.out.println("Item deleted successfully.");
                 } else {
-                    System.out.println("Не получилось");
+                    System.out.println("Failed. Item not founded.");
                 }
 
             } else if (select == 4) {
@@ -55,7 +55,7 @@ public class StartUI {
                 if (itemById != null) {
                     System.out.println(itemById);
                 } else {
-                    System.out.println("Заявка не найдена.");
+                    System.out.println("Item not founded.");
                 }
 
             } else if (select == 5) {
@@ -67,7 +67,7 @@ public class StartUI {
                         System.out.println(itemsByName[i]);
                     }
                 } else {
-                    System.out.println("Заявки не найдены.");
+                    System.out.println("Items not founded.");
                 }
 
             } else if (select == 6) {
