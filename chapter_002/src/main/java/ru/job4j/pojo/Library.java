@@ -14,7 +14,7 @@ public class Library {
         books[2] = garryPotter;
         books[3] = theWitcher;
 
-        for(int index = 0; index < books.length; index++) {
+        for (int index = 0; index < books.length; index++) {
             Book bk = books[index];
             System.out.println(bk.getName() + " - " + bk.getSumOfPages());
         }
@@ -23,14 +23,14 @@ public class Library {
         books[0] = books[3];
         books[3] = temp;
 
-        for(int index = 0; index < books.length; index++) {
+        for (int index = 0; index < books.length; index++) {
             Book bk = books[index];
             System.out.println(bk.getName() + " - " + bk.getSumOfPages());
         }
 
-        for(int index = 0; index < books.length; index++) {
+        for (int index = 0; index < books.length; index++) {
             Book bk = books[index];
-            if(bk.equals(cleanCode)) {
+            if (bk.equals(cleanCode)) {
                 System.out.println(bk.getName() + " - " + bk.getSumOfPages());
             }
         }

@@ -9,7 +9,7 @@ public class Item {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "Item{" + "name='" + name + '\'' + ", id='" + id + '\'' + ')';
     }
 

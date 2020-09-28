@@ -8,7 +8,7 @@ public class Matches {
         int matches = 11;
         int counter = 1;
         while (matches > 0) {
-            if (counter % 2 != 0){
+            if (counter % 2 != 0) {
                 System.out.println("Ход первого игрока.");
             } else {
                 System.out.println("Ход второго игрока.");
@@ -19,7 +19,7 @@ public class Matches {
                 continue;
             }
             matches = matches - select;
-            if (matches <= 0){
+            if (matches <= 0) {
                 if (counter % 2 != 0) {
                     System.out.println("Победил игрок номер 1.");
                 } else {
